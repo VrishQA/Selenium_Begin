@@ -1,0 +1,25 @@
+package xPath;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class XPath {
+
+	public static void main(String[] args) {
+		WebDriver dr= new ChromeDriver();
+		dr.get("https://demo.nopcommerce.com/");
+		dr.manage().window().maximize();
+		
+		//xpath with single attribute
+		dr.findElement(By.xpath("//select[@id='customerCurrency']")).click();
+	
+		//xpath with multiple attribute
+		
+dr.findElement(By.xpath("//input[@type='text' and @name='q']")).sendKeys("T-Shirts");
+
+	}
+
+}
+//input[@id='small-searchterms']
+//*[@id="small-searchterms"]

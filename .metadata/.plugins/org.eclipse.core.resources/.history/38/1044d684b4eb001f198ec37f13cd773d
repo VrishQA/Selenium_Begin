@@ -1,0 +1,16 @@
+package xPath;
+
+
+public class XPath {
+
+	public static void main(String[] args) {
+		WebDriver driver= new ChromeDriver();
+	
+		
+
+
+	}
+
+}
+//input[@id='small-searchterms']
+//*[@id="small-searchterms"]

@@ -1,0 +1,23 @@
+package conditionalMethods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ConditionalMethods {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver dr= new ChromeDriver();
+		dr.get("https://www.saucedemo.com/");
+		Thread.sleep(2000);
+		dr.manage().window().fullscreen();
+		dr.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
+		dr.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
+		dr.findElement(By.id("login-button")).click();
+		Thread.sleep(5000);// to close password popup
+		System.out.println("TestPass- Login with PopUp");
+		dr.manage().window().fullscreen();
+	}
+
+}
