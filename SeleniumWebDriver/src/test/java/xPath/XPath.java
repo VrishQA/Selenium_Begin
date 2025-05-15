@@ -84,6 +84,8 @@ public class XPath {
    String cartValue=cartCheck.getText();
    if(cartValue.isEmpty()) {
 	   System.out.println("Cart is Empty");
+	   
+	   dr.quit();
    }
     
 //	 

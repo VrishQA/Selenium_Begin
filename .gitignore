@@ -1,0 +1,6 @@
+# Eclipse metadata .metadata/ *.log
+ # Compiled Java class files *.class
+ # Maven target directory /target/
+ # Mac system files 
+.DS_Store
+

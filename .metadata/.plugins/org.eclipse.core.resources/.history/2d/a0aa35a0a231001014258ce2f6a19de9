@@ -1,0 +1,27 @@
+package wait;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ImplicitExplicitWaitDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//implicit wait
+		
+		WebDriver dr= new ChromeDriver();
+		dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		dr.get("https://www.saucedemo.com/");
+		dr.manage().window().fullscreen();
+		dr.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
+		dr.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
+		dr.findElement(By.id("login-button")).click();
+		
+		System.out.println("TestPass- Login with PopUp");
+		dr.manage().window().fullscreen();
+	}
+
+}
