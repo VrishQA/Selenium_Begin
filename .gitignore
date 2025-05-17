@@ -1,6 +1,6 @@
-# Eclipse metadata .metadata/ *.log
- # Compiled Java class files *.class
- # Maven target directory /target/
- # Mac system files 
-.DS_Store
-
+# Ignore Eclipse metadata and workspace files# Eclipse metadata .metadata/ *.log .metadata/ # Compiled Java class files 
+*.class *.log # Maven target directory /target/ *.snap # Mac system files .DS_Store *.markers /.metadata/ *.prefs *.xmi 
+*.index *.dat *.xml # Maven build output target/ # Eclipse-specific .classpath .project
+.settings/
+/.metadata/
+.metadata/
