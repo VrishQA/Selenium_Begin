@@ -65,11 +65,13 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="WindowHandles"/>
 			<item value="webDriverProject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="WindowHandles"/>
 			<item value="webDriverProject"/>
 		</list>
 		<list key="version">
